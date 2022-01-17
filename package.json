@@ -1,0 +1,26 @@
+{
+  "name": "k8s-msa-ui",
+  "version": "1.0.0",
+  "description": "MSA-ui-container",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "request": "^2.88.2",
+    "sync-request": "^6.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skarltjr/MSA-ui-container.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skarltjr/MSA-ui-container/issues"
+  },
+  "homepage": "https://github.com/skarltjr/MSA-ui-container#readme"
+}

@@ -1,5 +1,3 @@
-const { json } = require('body-parser');
-const { application } = require('express');
 var express = require('express');
 var request = require('sync-request');
 

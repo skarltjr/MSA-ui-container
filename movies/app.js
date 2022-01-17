@@ -1,5 +1,6 @@
 var express = require('express');
 var request = require('sync-request');
+require('dotenv').config();
 
 var app = express();
 app.use(express.static(__dirname + "/public"));
@@ -9,8 +10,11 @@ app.use(express.urlencoded({extended:true}));
 var server = app.listen(3000, function(){
     console.log("Express server has started on port 3000")
 })
-var infoBaseUrl = 'http://localhost:8080/info/'
 
+const info_ip = process.env.INFO_IP
+var infoBaseUrl = 'http://'+info_ip+':8080/info/'
+
+console.log(infoBaseUrl)
 app.get('/', function(req, res){
     res.sendFile(__dirname+'/index.html')
 });

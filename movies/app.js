@@ -28,6 +28,7 @@ app.get('/info/:movieNum', function(req, res){
         content : ""
     }
     // 기본이 비동기라 외부 api호출 종료를 보장 후 다음으로 넘어가야한다
+    console.log('current target uri = '+targetUrl)
     var response = request('GET',targetUrl)
 
     var result = JSON.parse(response.getBody())

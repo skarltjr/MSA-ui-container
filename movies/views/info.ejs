@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>movie info</title>
+  </head>
+  <body>
+    <h1>제목 : 
+      <% if(title){ %>
+        <span class="name"><%= title %>!</span>
+      <% } else { %>
+        <span class="stranger">Stranger!</span>
+      <% } %>
+    </h1>
+    <h1>설명 : 
+        <% if(content){ %>
+          <span class="name"><%= content %>!</span>
+        <% } else { %>
+          <span class="stranger">Stranger!</span>
+        <% } %>
+      </h1>
+  </body>
+</html>

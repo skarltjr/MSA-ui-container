@@ -12,7 +12,8 @@ var server = app.listen(3000, function(){
 })
 
 const info_ip = process.env.INFO_IP
-var infoBaseUrl = 'http://'+info_ip+':8080/info/'
+const info_port = process.env.INFO_PORT
+var infoBaseUrl = 'http://'+info_ip+':'+info_port+'/info/'
 
 console.log(infoBaseUrl)
 app.get('/', function(req, res){

@@ -36,7 +36,7 @@ app.get('/', function(req, res){
     });
 });
 
-app.get('/info/:movieNum', function(req, res){
+app.get('/movie/:movieNum', function(req, res){
     var targetUrl = infoBaseUrl+req.params.movieNum
     var data = {
         movieNumber : 0,

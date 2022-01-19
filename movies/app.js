@@ -17,7 +17,7 @@ const info_ip = process.env.INFO_IP
 const info_port = process.env.INFO_PORT
 const ui_ip = process.env.UI_IP
 const ui_port = process.env.UI_PORT
-var infoBaseUrl = 'http://'+info_ip+':'+info_port+'/info/'
+var infoBaseUrl = 'http://'+info_ip+':'+info_port+'/movie/'
 
 console.log(infoBaseUrl)
 app.get('/', function(req, res){
